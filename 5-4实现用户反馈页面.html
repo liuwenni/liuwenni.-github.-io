@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现用户反馈页面</title>
+    <link href="css/mr-style.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        .cont{
+            width:720px;
+            margin:0 auto;
+            line-height: 40px;
+            padding:140px 130px 0 270px;
+            background:url("5-4bj3.jpg");
+        }
+        .say{
+            height:60px;
+            background:#f7f1f1;
+            line-height: 60px;
+        }
+        .question{
+            margin-top: 10px;
+        }
+        .color {
+            color: #foo;
+        }
+        .question p>:last-child{
+            color:rgb(159,161,154);
+        }
+        .btn{
+            position:relative;
+            }
+        .btn [type="file"]{
+            padding:5px;
+            position:absolute;
+            top:0;
+            left:0;
+            opacity:0;
+        }
+        [type="text"]{
+            height:30px;
+            width:695px;
+        }
+        [type="file"],[type="button"]{
+            width:110px;
+            height:35px;
+            font-size: 18px;
+            font-weight:bolder;
+            color:#00b0f0;
+            border:0;
+        }
+        [type="image"]{
+            margin-left: 500px;
+            width:120px;
+            margin-top: 30px;
+        }
+        </style>
+</head>
+<body>
+     <div class="cont">
+         <p class="say">反馈须知：本页仅受理在使用明日科技电子资源的过程中，遇到涉嫌违法违规行为的用户举报。</p>
+         <form>
+             <div class="question">
+                 <p>
+                     <span>*</span>
+                     <span>问题描述</span>
+                     <span>（亲爱的用户，请您详细描述反馈的问题及理由，以保证管理员及时准确处理您的反馈。）</span>
+                 </p>
+                 <textarea cols="90" rows="8"></textarea>
+             </div>
+             <div class="question">
+                 <p>
+                     <span>相关照片</span>
+                     <span>(如需上传多张照片，请单击增加）</span>
+                 </p>
+                 <img src="5-4bj.jpg" alt="" width="150px">
+             </div>
+             <div class="question">
+                 <p>
+                     <span>文件</span>
+                     <span>(只支持<span>.txt、.doc、.docx</span>格式）</span>
+                 </p>
+                 <div class="btn">
+                     <input type="button" value="选择文件">
+                     <input type="file">
+                 </div>
+             </div>
+             <input type="image" name="submit" src="5-4bj2.jpg">
+         </form>
+     </div>
+</body>
+</html>

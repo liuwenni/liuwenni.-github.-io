@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页轮播图</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        .img{
+            width:740px;
+            height:300px;
+            display:block;
+            float:left;
+        }
+        .outer{
+            margin:20px auto;
+            overflow:hidden;
+            width:740px;
+            height:300px;
+            position:relative;
+        }
+        .inner{
+            width:3700px;
+            height:300px;
+            position:absolute;
+            left:0;
+            top:0;
+            animation:move 10s ease normal infinite;
+        }
+        @keyframes move {
+            12%{left:0px}
+            25%{left:-740px}
+            37%{left:-740px}
+            50%{left:-1480px}
+            62%{left:-1480px}
+            75%{left:-2220px}
+            82%{left:-2220px}
+            100%{left:-2960px}
+        }
+     </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <img src="7-4bj1.jpg" alt="" class="img">
+            <img src="7-4bj2.jpg" alt="" class="img">
+            <img src="7-4bj3.jpg" alt="" class="img">
+            <img src="7-4bj4.jpg" alt="" class="img">
+            <img src="7-4bj5.jpg" alt="" class="img">
+        </div>
+    </div>
+</body>
+</html>
